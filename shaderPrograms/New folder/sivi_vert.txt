@@ -1,0 +1,31 @@
+#version 440 core
+
+layout (location = 0) in vec3 VertexPosition;
+layout (location = 2) in vec3 VertexNormal;
+layout (location = 1) in vec2 VertexTexCoord;
+
+out vec3 Position;
+out vec3 Normal;
+out vec2 TexCoord;
+
+//uniform mat4 modelViewMatrix;
+uniform mat4 scaleMatrix;
+//uniform mat4 translateMatrix;
+uniform mat4 mvp;
+//uniform mat4 normalMatrix;
+
+
+
+//mat3 NoMatrix;
+
+void main()
+{
+       
+		//NoMatrix=mat3(modelViewMatrix);
+		//Normal = normalize(NoMatrix*VertexNormal);
+		Normal = normalize(VertexNormal);
+		TexCoord = VertexTexCoord;
+		gl_Position = mvp * scaleMatrix * vec4(VertexPosition,1.0);
+		Position = vec3(scaleMatrix * vec4(VertexPosition,1.0));
+
+}

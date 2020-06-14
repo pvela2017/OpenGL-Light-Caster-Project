@@ -1,0 +1,16 @@
+﻿  Camara.cpp
+C:\Pablo\Pablo\Pablo\camara.h(6,10): fatal error C1083: No se puede abrir el archivo incluir: 'glew.h': No such file or directory
+  main.cpp
+C:\Pablo\Pablo\Pablo\main.h(7,10): fatal error C1083: No se puede abrir el archivo incluir: 'irrKlang.h': No such file or directory
+  Mesh.cpp
+C:\Pablo\Pablo\Pablo\Mesh.h(7,13): fatal error C1083: No se puede abrir el archivo incluir: 'scene.h': No such file or directory
+  Model.cpp
+C:\Pablo\Pablo\Pablo\Model.h(2,10): fatal error C1083: No se puede abrir el archivo incluir: 'glew.h': No such file or directory
+  plano.cpp
+C:\Pablo\Pablo\Pablo\plano.h(4,10): fatal error C1083: No se puede abrir el archivo incluir: 'Magick++.h': No such file or directory
+  Shaders.cpp
+C:\Pablo\Pablo\Pablo\Shaders.h(11,10): fatal error C1083: No se puede abrir el archivo incluir: 'glew.h': No such file or directory
+  Skybox.cpp
+C:\Pablo\Pablo\Pablo\Skybox.h(2,13): fatal error C1083: No se puede abrir el archivo incluir: 'Magick++.h': No such file or directory
+  ventana.cpp
+C:\Pablo\Pablo\Pablo\ventana.h(9,10): fatal error C1083: No se puede abrir el archivo incluir: 'glew.h': No such file or directory

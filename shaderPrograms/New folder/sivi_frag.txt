@@ -1,0 +1,46 @@
+#version 440 core
+
+//layout(early_fragment_tests) in;
+in vec3 Normal;
+in vec3 Position;
+in vec2 TexCoord;
+
+
+uniform sampler2D TexTriangulo;
+
+uniform vec3 LightPosition;
+
+uniform vec3 AmbientColor;
+uniform vec3 DiffuseColor;
+
+uniform vec3 Kd;
+uniform vec3 Ka;
+uniform vec3 Ks;
+
+
+
+out vec4 FragColor;
+
+
+	vec3 n = normalize(Normal);
+	
+
+	vec3 s = normalize(LightPosition);
+
+	vec3 v = normalize(-Position);
+	vec3 r = reflect( -s, n);
+
+
+	vec3 ambdiff = Ka*AmbientColor + Kd * max(dot(s,n),0.0)*DiffuseColor;
+
+	vec3 specular = DiffuseColor * Ks * pow(max(dot(r,v), 0.0),0.5);
+
+	
+	
+
+
+void main() {
+
+   	 	vec4 texColor = texture(TexTriangulo, TexCoord);
+		FragColor = vec4(ambdiff, 1.0) * texColor + mix(vec4(specular, 1.0),texColor, 0.0);
+}

@@ -12,4 +12,8 @@ ImageMagick. <br />
 Also, GLSL was used to perform the calculations of the vertices and fragments in  the video card (GPU), in order to relieve the processor (CPU) from complex calculation and stress. 
 In addition, the models or the light casters should be able to move in the scene to create a dynamic effect of the shadow on the floor and other objects.<br />
 <br />
+
+## Results
+![This is an image](images/results.png)
+
 You can find further information here: https://sites.google.com/view/pablovela/software/opengl

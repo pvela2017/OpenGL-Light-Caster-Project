@@ -1,5 +1,6 @@
 # OpenGL-Light-Caster-Project
 
+## About The Project
 This project consists on the implementation of one or more light caster in order to generate shadow below the models and rendered objects.<br />
 <br />
 To accomplish this goal, modern OpenGL version 4.4 was used, in addition to the libraries:<br />
@@ -16,4 +17,5 @@ In addition, the models or the light casters should be able to move in the scene
 ## Results
 ![This is an image](images/results.png)
 
+## Acknowledgments
 You can find further information here: https://sites.google.com/view/pablovela/software/opengl
